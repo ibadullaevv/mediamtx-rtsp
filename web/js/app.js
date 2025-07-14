@@ -18,7 +18,7 @@ async function loadCameras() {
         updateOnlineCount();
     } catch (error) {
         console.error('Kameralar yuklanmadi:', error);
-        showError('Kameralar ma'lumotlarini yuklab bo\'lmadi');
+        showError("Kameralar ma'lumotlarini yuklab bo'lmadi");
     }
 }
 
