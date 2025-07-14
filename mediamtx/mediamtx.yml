@@ -1,0 +1,72 @@
+# MediaMTX configuration for Hikvision cameras
+
+# General settings
+logLevel: info
+logDestinations: [stdout]
+logFile: ""
+
+# API settings
+api: yes
+apiAddress: 0.0.0.0:9997
+
+# Metrics settings
+metrics: yes
+metricsAddress: 0.0.0.0:9998
+
+# RTSP settings
+rtspAddress: 0.0.0.0:8554
+protocols: [multicast, tcp]
+encryption: no
+rtspAddress: 0.0.0.0:8554
+
+# HLS settings
+hls: yes
+hlsAddress: 0.0.0.0:8888
+hlsAlwaysRemux: no
+hlsSegmentCount: 3
+hlsSegmentDuration: 1s
+hlsAllowOrigin: "*"
+hlsDirectory: ""
+
+# WebRTC settings
+webrtc: yes
+webrtcAddress: 0.0.0.0:8889
+webrtcAllowOrigin: "*"
+
+# Camera paths - bu yerda kameralar qo'shiladi
+paths:
+  # Kamera 1 - Main entrance
+  camera1:
+    source: rtsp://admin:password123@192.168.1.100:554/Streaming/Channels/101
+    sourceProtocol: tcp
+    sourceOnDemand: no
+    runOnInit: ""
+    runOnInitRestart: no
+    runOnDemand: ""
+    runOnDemandRestart: no
+    runOnDemandStartTimeout: 10s
+    runOnDemandCloseAfter: 10s
+    
+  # Kamera 2 - Library
+  camera2:
+    source: rtsp://admin:password123@192.168.1.101:554/Streaming/Channels/101
+    sourceProtocol: tcp
+    sourceOnDemand: no
+    
+  # Kamera 3 - Cafeteria
+  camera3:
+    source: rtsp://admin:password123@192.168.1.102:554/Streaming/Channels/101
+    sourceProtocol: tcp
+    sourceOnDemand: no
+    
+  # Kamera 4 - Auditorium
+  camera4:
+    source: rtsp://admin:password123@192.168.1.103:554/Streaming/Channels/101
+    sourceProtocol: tcp
+    sourceOnDemand: no
+    
+  # Kamera 5 - Parking
+  camera5:
+    source: rtsp://admin:password123@192.168.1.104:554/Streaming/Channels/101
+    sourceProtocol: tcp
+    sourceOnDemand: no

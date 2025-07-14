@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitet Kameralar Tizimi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-video"></i> Universitet Kameralar Tizimi</h1>
+            <div class="status-info">
+                <span id="online-cameras">0</span> kamera online
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Kamera qidirish...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="view-toggle">
+                <button id="grid-view" class="active"><i class="fas fa-th"></i></button>
+                <button id="list-view"><i class="fas fa-list"></i></button>
+            </div>
+        </div>
+
+        <div id="camera-grid" class="camera-grid">
+            <!-- Kameralar bu yerda ko'rsatiladi -->
+        </div>
+
+        <div id="loading" class="loading">
+            <i class="fas fa-spinner fa-spin"></i> Yuklanmoqda...
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
