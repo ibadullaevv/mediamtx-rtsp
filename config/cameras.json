@@ -2,12 +2,12 @@
   "cameras": [
     {
       "id": "camera1",
-      "name": "Main Entrance",
+      "name": "Asosiy bino -122xona",
       "location": "Building A - Main Door",
       "ip": "192.168.1.100",
       "username": "admin",
-      "password": "password123",
-      "rtsp_url": "rtsp://admin:password123@192.168.1.100:554/Streaming/Channels/101",
+      "password": "ehue2019",
+      "rtsp_url": "rtsp://admin:ehue2019@10.10.25.95:554/Streaming/Channels/101",
       "hls_url": "http://localhost:8888/camera1/index.m3u8",
       "status": "online",
       "description": "Asosiy kirish eshigi nazorati"
@@ -16,10 +16,10 @@
       "id": "camera2", 
       "name": "Library",
       "location": "Building B - Library Hall",
-      "ip": "192.168.1.101",
+      "ip": "10.10.25.98",
       "username": "admin",
-      "password": "password123",
-      "rtsp_url": "rtsp://admin:password123@192.168.1.101:554/Streaming/Channels/101",
+      "password": "ehue2019",
+      "rtsp_url": "rtsp://admin:ehue2019@10.10.25.98:554/Streaming/Channels/101",
       "hls_url": "http://localhost:8888/camera2/index.m3u8",
       "status": "online",
       "description": "Kutubxona zali nazorati"
@@ -28,37 +28,13 @@
       "id": "camera3",
       "name": "Cafeteria", 
       "location": "Building C - Dining Hall",
-      "ip": "192.168.1.102",
+      "ip": "10.10.25.197",
       "username": "admin",
-      "password": "password123",
-      "rtsp_url": "rtsp://admin:password123@192.168.1.102:554/Streaming/Channels/101",
+      "password": "ehue2019",
+      "rtsp_url": "rtsp://admin:ehue2019@10.10.25.197:554/Streaming/Channels/1",
       "hls_url": "http://localhost:8888/camera3/index.m3u8",
       "status": "online",
       "description": "Oshxona va ovqatlanish zali"
-    },
-    {
-      "id": "camera4",
-      "name": "Auditorium",
-      "location": "Building D - Main Hall", 
-      "ip": "192.168.1.103",
-      "username": "admin",
-      "password": "password123",
-      "rtsp_url": "rtsp://admin:password123@192.168.1.103:554/Streaming/Channels/101",
-      "hls_url": "http://localhost:8888/camera4/index.m3u8",
-      "status": "online",
-      "description": "Asosiy auditoriya zali"
-    },
-    {
-      "id": "camera5",
-      "name": "Parking Area",
-      "location": "Outside - Parking Lot",
-      "ip": "192.168.1.104", 
-      "username": "admin",
-      "password": "password123",
-      "rtsp_url": "rtsp://admin:password123@192.168.1.104:554/Streaming/Channels/101",
-      "hls_url": "http://localhost:8888/camera5/index.m3u8",
-      "status": "online",
-      "description": "Avtomobil to'xtash joyi nazorati"
     }
   ]
 }
