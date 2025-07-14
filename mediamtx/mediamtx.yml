@@ -52,13 +52,16 @@ paths:
     source: rtsp://admin:ehue2019@10.10.25.98/Streaming/Channels/101
     sourceProtocol: tcp
     sourceOnDemand: no
-    
+    runOnInit: ""
+    runOnInitRestart: no
+    runOnDemand: ""
+    runOnDemandRestart: no
+    runOnDemandStartTimeout: 10s
+    runOnDemandCloseAfter: 10s
+
   # Kamera 3 - Cafeteria
   camera3:
     source: rtsp://admin:ehue2019@10.10.25.197/Streaming/Channels/1
     sourceProtocol: tcp
     sourceOnDemand: no
-    
-    source: rtsp://admin:password123@192.168.1.104:554/Streaming/Channels/101
-    sourceProtocol: tcp
-    sourceOnDemand: no
+    runOnInit: ""
